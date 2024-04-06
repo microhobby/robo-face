@@ -50,5 +50,6 @@ RUN apt-get update \
 COPY --from=build /demo/binary/* /usr/bin/
 
 ENV SLINT_FULLSCREEN=1
-ENV SLINT_BACKEND=linuxkms-skia-opengl
+ENV SLINT_BACKEND=winit-skia
+
 CMD /usr/bin/robo-face
